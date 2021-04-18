@@ -1,0 +1,18 @@
+server:
+  port: 9527
+
+ribbon:
+  eureka:
+   enabled: true
+
+spring:
+  application:
+    name: consumer
+    
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    fetch-registry: true
